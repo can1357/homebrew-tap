@@ -1,35 +1,41 @@
 class Omp < Formula
   desc "Coding agent with the IDE wired in"
   homepage "https://omp.sh"
-  version "15.12.1"
+  version "15.12.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-darwin-arm64"
-      sha256 "570cbde5a077fe6195531aed8bc49bb329077743befe72212297d73c826b61db"
+      url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-darwin-arm64",
+          using: :nounzip
+      sha256 "9a8181916b5fd764b3cde591ff7495fb62437924027bf68c02809a701b6b95b5"
     end
     on_intel do
-      url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-darwin-x64"
-      sha256 "259de5a40bcbadcf5b2be4f885e28db1fb49d3872388737e8d9c1d97c194fb52"
+      url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-darwin-x64",
+          using: :nounzip
+      sha256 "a7ce6eae6cdfd5c8541874f211f99f68b6725607e47b4cafe2372203a945efbf"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-linux-arm64"
-      sha256 "f34ffd652563b3da66e85bb967b12073b151a6b5a33da867f3eb706752dc4eee"
+      url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-linux-arm64",
+          using: :nounzip
+      sha256 "e10ef8888df0a2ee115cd962f3ee21fefbfeeacf3736e91bb9e13c36647ad38d"
     end
     on_intel do
-      url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-linux-x64"
-      sha256 "b5f8ccdc23b55d9404f39bd85851a39d15f47c2864644668f29b8b61c67cec55"
+      url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-linux-x64",
+          using: :nounzip
+      sha256 "2e7e6d184b6d9b167b1f910a61944d8b7cc012d814554ec10968e97a00154d76"
     end
   end
 
   def install
     bin.install Dir["omp-*"].first => "omp"
     (bin/"omp").chmod 0555
-    generate_completions_from_executable(bin/"omp", "completions", shells: [:bash, :zsh, :fish])
+    with_env(HOME: buildpath) do
+      generate_completions_from_executable(bin/"omp", "completions", shells: [:bash, :zsh, :fish])
+    end
   end
 
   test do
