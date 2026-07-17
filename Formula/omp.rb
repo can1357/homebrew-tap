@@ -1,19 +1,19 @@
 class Omp < Formula
   desc "Coding agent with the IDE wired in"
   homepage "https://omp.sh"
-  version "17.0.2"
+  version "17.0.3"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-darwin-arm64",
           using: :nounzip
-      sha256 "bd0fa84f36f2dc52e0aab91f2d889e537838929a3d49a8796461a34b7f9d966c"
+      sha256 "0a9052e6a2a53bf40477c0628da0cc58c36910832de2a2aa87470f79432e2a3e"
     end
     on_intel do
       url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-darwin-x64",
           using: :nounzip
-      sha256 "dab038597bdf68fbaa756c8fe1ab387a064810a59097b00c63ca02451e6445ec"
+      sha256 "ceecdee22a7a15a71893dadbb62cc4399e301c3a8c2d5f2e11f693cb3c05eb2a"
     end
   end
 
@@ -21,12 +21,12 @@ class Omp < Formula
     on_arm do
       url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-linux-arm64",
           using: :nounzip
-      sha256 "33fa02680e0d03e7e91f28e322d49a011c938c93f387458ca4bbad0be0d281ed"
+      sha256 "564ce4c95d06491ac6936d3a6807f811f288ac75afcb6a849ef1b041ad780857"
     end
     on_intel do
       url "https://github.com/can1357/oh-my-pi/releases/download/v#{version}/omp-linux-x64",
           using: :nounzip
-      sha256 "65952ccf8788f2995620203871525534530ee511654702f8207fa2bd238bd743"
+      sha256 "6b60d9c3f9092316e06146bde0e73686935db0726824e90fd06b77ed13849afe"
     end
   end
 
