@@ -1,32 +1,32 @@
 class Omp < Formula
   desc "Coding agent with the IDE wired in"
   homepage "https://omp.sh"
-  version "18.10.1"
+  version "18.10.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://build.stencil.so/d/omp/20261012-055547-5d0aaff/omp-darwin-arm64",
+      url "https://build.stencil.so/d/omp/20261012-140905-c891346/omp-darwin-arm64",
           using: :nounzip
-      sha256 "74d920b72e7af01dbe258b41bb0684da7e747af63628eee41e98b5e74e2f21ac"
+      sha256 "9752e3d7f7bdab636e21495a6affc196e8ffc3a2dffaf529db2dd73d2bdea255"
     end
     on_intel do
-      url "https://build.stencil.so/d/omp/20261012-055547-5d0aaff/omp-darwin-x64",
+      url "https://build.stencil.so/d/omp/20261012-140905-c891346/omp-darwin-x64",
           using: :nounzip
-      sha256 "057b47eb1b3d57c0af9d89c3b144be455d2064e9febdc85bec8a38191302e1d6"
+      sha256 "76b0d22a95f3b8a8f4023ed0940ba7f262f1032b61c15dd65c4f6c20776ad5cb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://build.stencil.so/d/omp/20261012-055547-5d0aaff/omp-linux-arm64",
+      url "https://build.stencil.so/d/omp/20261012-140905-c891346/omp-linux-arm64",
           using: :nounzip
-      sha256 "5cad38a8edee60cec9c0ce91810eba38bda0efe349562157023810343dacb8d5"
+      sha256 "a3ca5d7c4bf09c0d0cd1bc6bdeb77b59b3c33d4fb13240f05d272d46ec0c6a0e"
     end
     on_intel do
-      url "https://build.stencil.so/d/omp/20261012-055547-5d0aaff/omp-linux-x64",
+      url "https://build.stencil.so/d/omp/20261012-140905-c891346/omp-linux-x64",
           using: :nounzip
-      sha256 "9798d22d518b23342b4cadf57672b276ef09e756c1832adc6571b04b26ad4f1b"
+      sha256 "3d8f967bb4cf2a154592115edaf4bb723d7a6a6448eec933ac5eb49344938125"
     end
   end
 
