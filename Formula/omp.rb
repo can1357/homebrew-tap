@@ -1,32 +1,36 @@
 class Omp < Formula
   desc "Coding agent with the IDE wired in"
   homepage "https://omp.sh"
-  version "18.12.2"
+  version "18.12.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://build.stencil.so/d/omp/20261018-210352-1d5aff9/omp-darwin-arm64",
+      url "https://build.stencil.so/d/omp/20261019-184157-53a0377/omp-darwin-arm64",
           using: :nounzip
-      sha256 "abd9a5b0fef77f4204078e348e233faa0dd3d5d81719cf2b6a9b9478c10eee48"
+      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.12.3/omp-darwin-arm64"
+      sha256 "f2a657b3320fcafa23055053940a45b26a8d3254e1412a158838013d670d6ec5"
     end
     on_intel do
-      url "https://build.stencil.so/d/omp/20261018-210352-1d5aff9/omp-darwin-x64",
+      url "https://build.stencil.so/d/omp/20261019-184157-53a0377/omp-darwin-x64",
           using: :nounzip
-      sha256 "dcd3fa827ae73bdb471bb838171ef1c9c5be665a68eaec45ffc6d6e5cf128b92"
+      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.12.3/omp-darwin-x64"
+      sha256 "73918ae225fa63bc0686081dce4eb90716540ef94e55185b999c697999f7b2c9"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://build.stencil.so/d/omp/20261018-210352-1d5aff9/omp-linux-arm64",
+      url "https://build.stencil.so/d/omp/20261019-184157-53a0377/omp-linux-arm64",
           using: :nounzip
-      sha256 "967d64fce514586e94c9ac5f978743b4fce29b999c8763747ce4754811407d1a"
+      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.12.3/omp-linux-arm64"
+      sha256 "58f7c25e9b729b082192049ada07a31820c8b257325545a5fe232ff1679f1093"
     end
     on_intel do
-      url "https://build.stencil.so/d/omp/20261018-210352-1d5aff9/omp-linux-x64",
+      url "https://build.stencil.so/d/omp/20261019-184157-53a0377/omp-linux-x64",
           using: :nounzip
-      sha256 "9513ef9f19d7991aac6ae0cb6077bcf16662092ddde861c002a91cedc6f47f9a"
+      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.12.3/omp-linux-x64"
+      sha256 "065b5079d65ff6b77d961c935ba808e8f0f569ca6a2cb7b5fb6a1e8da72d7dec"
     end
   end
 
