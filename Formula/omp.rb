@@ -1,36 +1,36 @@
 class Omp < Formula
   desc "Coding agent with the IDE wired in"
   homepage "https://omp.sh"
-  version "18.22.0"
+  version "18.22.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://build.stencil.so/d/omp/20261116-215456-3e8cff3/omp-darwin-arm64",
+      url "https://build.stencil.so/d/omp/20261117-212150-276169d/omp-darwin-arm64",
           using: :nounzip
-      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.22.0/omp-darwin-arm64"
-      sha256 "d185113d63eba23925e5d70ab661a424b827c06c98f8e766c3bf4ad62ddaff9a"
+      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.22.1/omp-darwin-arm64"
+      sha256 "6bf784a1ae1d3815116019372af27beb9192e1962e939be35643f6712d257c5b"
     end
     on_intel do
-      url "https://build.stencil.so/d/omp/20261116-215456-3e8cff3/omp-darwin-x64",
+      url "https://build.stencil.so/d/omp/20261117-212150-276169d/omp-darwin-x64",
           using: :nounzip
-      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.22.0/omp-darwin-x64"
-      sha256 "a1933196fe54bac3d518ccf7e5cc11849dd207b710cda431c465a12d173ff035"
+      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.22.1/omp-darwin-x64"
+      sha256 "b2f04268a036718bff475a95fbcafb360f3b48bafdcc40b3351aaaeb36ef62a2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://build.stencil.so/d/omp/20261116-215456-3e8cff3/omp-linux-arm64",
+      url "https://build.stencil.so/d/omp/20261117-212150-276169d/omp-linux-arm64",
           using: :nounzip
-      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.22.0/omp-linux-arm64"
-      sha256 "7238dd213d5c61bc9bf51735d552bc71901fdd44329f862b0a971146b1cdac3e"
+      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.22.1/omp-linux-arm64"
+      sha256 "c65dd594ba33efd53274fa3b766bd31f67c070717fac12f9e604d2b5b5469bf9"
     end
     on_intel do
-      url "https://build.stencil.so/d/omp/20261116-215456-3e8cff3/omp-linux-x64",
+      url "https://build.stencil.so/d/omp/20261117-212150-276169d/omp-linux-x64",
           using: :nounzip
-      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.22.0/omp-linux-x64"
-      sha256 "f706b27ba845834d8f8360705a2e9ba1534f3593fa24411d41358272de33642b"
+      mirror "https://github.com/can1357/oh-my-pi/releases/download/v18.22.1/omp-linux-x64"
+      sha256 "ba2d380bc54a6f175a314b49d2f45e82d45e469274362969afbadf2d65423fd6"
     end
   end
 
